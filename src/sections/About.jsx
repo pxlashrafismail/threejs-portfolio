@@ -18,7 +18,7 @@ const About = () => {
                 {/* Intro */}
                 <div className="col-span-1 xl:row-span-3">
                     <div className="grid-container">
-                        <img src="/assets/grid1.png" alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain"/>
+                        <img src="/assets/PROF1.jpg" alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain"/>
                         <div>
                             <p className="grid-headtext">
                                 Hi, ik ben Ashraf
@@ -37,7 +37,7 @@ const About = () => {
                 {/* Front-End */}
                 <div className="col-span-1 xl:row-span-3">
                     <div className="grid-container">
-                        <img src="/assets/grid2.png" alt="grid-2" className="w-full sm:w-[276px] h-fit object-contain"/>
+                        <img src="/assets/Front_end-Codersbrain.jpg" alt="grid-2" className="w-full sm:w-[276px] h-full object-contain"/>
                         <div>
                             <p className="grid-headtext">
                                 Front-End Developer in Opleiding
@@ -92,7 +92,7 @@ const About = () => {
                 {/* Skills */}
                 <div className="xl:col-span-2 xl:row-span-3">
                     <div className="grid-container">
-                        <img src="/assets/grid3.png" alt="grid-3" className="w-full sm:h-[266px] h-fit object-contain"/>
+                        <img src="/assets/skills-your-front-end-developers-must-have.jpg" alt="grid-3" className="w-full sm:h-[266px] h-fit object-contain"/>
                         <div>
                             <p className="grid-headtext">
                                 Coding Skills
