@@ -8,7 +8,7 @@ import CanvasLoader from '../components/CanvasLoader.jsx';
 import ErrorBoundary from '../components/ErrorBoundary';
 import MeetingRoom from '../components/MeetingRoom.jsx';
 import Php from '../components/Php.jsx';
-import JavaScript from '../components/JavaScript.jsx';
+import JavaScript from '../components/Javascript.jsx';
 import NodeJs from '../components/NodeJs.jsx';
 import Button from '../components/Button.jsx';
 import ReactLogo from "../components/ReactLogo.jsx";
