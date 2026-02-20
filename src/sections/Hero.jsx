@@ -46,7 +46,7 @@ const Hero = () => {
                                 minDistance={10}
                                 maxDistance={30}
                                 enablePan={true}
-                                enableZoom={true}
+                                enableZoom={false}
                                 enableRotate={true}
                             />
 
