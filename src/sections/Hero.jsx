@@ -8,10 +8,13 @@ import CanvasLoader from '../components/CanvasLoader.jsx';
 import ErrorBoundary from '../components/ErrorBoundary';
 import MeetingRoom from '../components/MeetingRoom.jsx';
 import Php from '../components/Php.jsx';
-import JavaScript from '../components/Javascript.jsx';
+import JavaScript from '../components/JavaScript.jsx';
 import NodeJs from '../components/NodeJs.jsx';
 import Button from '../components/Button.jsx';
 import ReactLogo from "../components/ReactLogo.jsx";
+import { extend } from '@react-three/fiber';
+const H2 = (props) => <group {...props} />;
+extend({ H2 });
 
 const Hero = () => {
     const isSmall = useMediaQuery({ maxWidth: 440 });
@@ -38,7 +41,11 @@ const Hero = () => {
                     <Suspense fallback={<CanvasLoader />}>
                         <ErrorBoundary>
                             {/* Camera */}
-                            <PerspectiveCamera makeDefault position={[-10, 2, 20]} fov={45} />
+                            <PerspectiveCamera
+                                makeDefault
+                                position={isMobile ? [0, 2, 30] : [-10, 2, 20]}
+                                fov={45}
+                            />
 
                             {/* Controls */}
                             {
@@ -65,13 +72,13 @@ const Hero = () => {
                             <MeetingRoom
                                 position={[0, -5, -10]}
                                 scale={0.6}
-                                rotation={[0, 0, 0]}
+                                rotation={[0, Math.PI /4, 0]}
                             />
 
                             {/* Three Technology Mascots */}
                             <ambientLight intensity={5} />
                             <Php position={[0, -5, -10]} scale={0.3} />
-                            <ReactLogo position={[0,-5,-10]} scale={0.01} />
+                            <ReactLogo position={[0,-5,-10]} scale={0.5} />
                             <JavaScript position={[0, -5, -6]} scale={20} />
                             <NodeJs position={[-3, -3, -12]} scale={20} />
                         </ErrorBoundary>

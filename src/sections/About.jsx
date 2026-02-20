@@ -1,9 +1,13 @@
 import React from 'react'
 import Globe from "react-globe.gl";
 import Button from "../components/Button.jsx";
+import { useMediaQuery } from 'react-responsive'; // import
+
 
 const About = () => {
     const [copied, setCopied] = React.useState(false);
+    const isMobile = useMediaQuery({ maxWidth: 768 }); // detect mobile
+
 
     const handleCopy = () => {
         navigator.clipboard.writeText("ict.ashraf1986@outlook.com");
@@ -70,6 +74,7 @@ const About = () => {
                                     size: 20,
                                     color: 'white',
                                 }]}
+
                             />
                         </div>
                         <div>
