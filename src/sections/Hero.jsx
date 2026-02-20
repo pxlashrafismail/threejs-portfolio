@@ -41,6 +41,9 @@ const Hero = () => {
                             <PerspectiveCamera makeDefault position={[-10, 2, 20]} fov={45} />
 
                             {/* Controls */}
+                            {
+                                !isMobile && (
+
                             <OrbitControls
                                 target={[0, -2, -8]}
                                 minDistance={10}
@@ -49,6 +52,8 @@ const Hero = () => {
                                 enableZoom={false}
                                 enableRotate={true}
                             />
+                                )
+                            }
 
                             {/* Lighting */}
                             <ambientLight intensity={5} />
